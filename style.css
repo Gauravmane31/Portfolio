@@ -1,0 +1,460 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .width80vw {
+            width: 85vw;
+            margin: auto;
+        }
+
+        .alignCenterCenter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fontfamily {
+            font-family: "Montserrat";
+        }
+
+        .navbar {
+            background-color: black;
+            height: 80px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .InNavbar {
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        #logoimg {
+            width: 60px;
+        }
+
+        .NavBox2 {
+            width: 670px;
+            justify-content: space-between !important;
+        }
+
+        .NavBox2 a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-weight: 600;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .NavBox2 a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        /* Desktop - above 1023px */
+        @media (min-width: 1024px) {
+            .hoverMenuImg {
+                display: none !important;
+            }
+
+            .hoverMenu {
+                display: none !important;
+            }
+        }
+
+        /* Mobile/Tablet - 1023px and below */
+        @media (max-width: 1023px) {
+            .NavBox2 {
+                display: none !important;
+            }
+            #menuimg{
+                width: 40px;
+            }
+            .hoverMenuImg {
+                width: 40px;
+                height: 50px;
+                display: block !important;
+                cursor: pointer;
+            }
+
+            .hoverMenu {
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                text-align: center;
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.5s ease-out;
+                z-index: 99;
+            }
+
+            .hoverMenu li {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .hoverMenu a {
+                display: block;
+                color: white;
+                padding: 15px 0;
+                font-weight: 600;
+                text-decoration: none;
+                border-bottom: 1px solid #333;
+                transition: background 0.3s ease;
+            }
+
+            .hoverMenu a:hover {
+                background-color: #333;
+            }
+
+            .hoverMenu.active {
+                max-height: 500px;
+            }
+        }
+
+        .Header {
+            background-image: url('Images/white_black_bg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right -220px;
+            background-position: center;
+            height: 700px;
+            align-items: end;
+        }
+
+        .InHeader {
+            justify-content: space-between;
+            height: 650px;
+            margin-top: 50px;
+        }
+
+        .NamePhoto {
+            width: 50%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-self: center;
+        }
+
+        .photo {
+            width: 70%;
+        }
+
+        .photo img {
+            height: 650px;
+        }
+
+        .nameBox {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nameBox h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .nameBox h1 {
+            font-size: 55px;
+        }
+
+        .nameBox p {
+            font-size: 22px;
+            color: #909191;
+            font-weight: 500;
+        }
+
+        .contactPlatfroms {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contactPlatfroms>a>img {
+            width: 35px;
+        }
+
+        .contacts {
+            width: 50px;
+            height: 50px;
+            background-color: #c4c4c4;
+            box-shadow: 6px 6px 10px gray;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .contacts:hover {
+            transform: scale(1.1);
+        }
+
+        .contacts img {
+            width: 30px;
+        }
+
+        @media (max-width: 1023px) {
+
+            .Header {
+                background: linear-gradient(135deg, #1c1d1c 40%, #333333 100%);
+                padding: 0 0 50px 0;
+                height: auto;
+            }
+
+            .InHeader {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                margin-top: 0;
+                gap: 40px;
+                width: 100%;
+            }
+
+            .NamePhoto {
+                width: 100%;
+                background-color: #0e0e0e;
+                text-align: center;
+            }
+
+            .nameBox {
+                width: 90%;
+                flex-direction: column;
+                align-items: center;
+                margin-inline: auto;
+                padding-top: 50px;
+            }
+
+            .nameBox h3 {
+                font-size: 22px;
+                margin-bottom: 10px;
+                color: #ffffff;
+            }
+
+            .nameBox h1 {
+                font-size: 38px;
+                color: #ffffff;
+            }
+
+            .nameBox p {
+                font-size: 18px;
+                color: #d3d3d3;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+
+            .contactPlatfroms {
+                justify-content: center;
+                gap: 15px;
+                margin-bottom: 60px;
+            }
+
+            .photo {
+                width: 80%;
+                max-width: 350px;
+            }
+
+            .photo img {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+                border-radius: 20px;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            }
+
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-heading {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .skills-section-div {
+            gap: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: black;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* About Me Section */
+        .AboutMe {
+            background-color: #1c1d1c;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .AboutMe p {
+            margin-top: 20px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #d3d3d3;
+        }
+
+        /* Education Section */
+        .education-section {
+            background-color: #f9f9f9;
+        }
+
+        .education-section ul {
+            list-style: disc;
+            list-style-position: inside;
+            padding-left: 0;
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .education-section li {
+            padding: 15px 0;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background-color: #1c1d1c;
+            color: white;
+        }
+
+        .Using-Now-div {
+            margin-top: 50px;
+            flex-direction: column;
+            font-size: larger;
+            gap: 20px;
+        }
+
+        /* Portfolio Section */
+        .portfolio-section {
+            flex-direction: column;
+        }
+
+        .portfolio-section p {
+            font-size: larger;
+            font-weight: 500;
+        }
+
+        .portfolio-section div {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .portfolio-section a {
+            width: 400px;
+            height: 220px;
+            border-radius: 10px;
+            display: inline-block;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-section a:hover {
+            transform: scale(1.2);
+        }
+
+        #portfolio1 {
+            background-image: url('/Images/portfolio1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #portfolio2 {
+            background-image: url('/Images/portfolio2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #portfolio3 {
+            background-image: url('/Images/portfolio3.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #portfolio4 {
+            background-image: url('/Images/portfolio4.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /* Contact Section */
+        .contact-section {
+            background-color: #1c1d1c;
+            color: white;
+        }
+
+        .contact-section form {
+            max-width: 500px;
+            margin: auto;
+            padding-block: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-section input,
+        .contact-section textarea {
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            font-family: 'Montserrat';
+        }
+
+        .contact-section button {
+            width: 200px;
+            align-self: center;
+            padding: 15px;
+            background-color: rgb(79, 79, 79);
+            color: white;
+            border: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: 'Montserrat';
+        }
+
+        .contact-section button:hover {
+            background-color: #808080;
+        }

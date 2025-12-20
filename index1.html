@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.figma.com/design/wK3J9D9Xk38NNckW7Iwsts/Portfolio---Tomasz-Gajda--Community-?node-id=0-1&p=f&t=lAhHhnM0LiNS7BJr-0 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Mane - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LHHFlcWo770_eSTpb",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar alignCenterCenter">
+        <div class="hoverMenu">
+            <li>
+                <a href="#about">ABOUT ME</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT ME</a>
+            </li>
+        </div>
+        <div class="InNavbar width80vw alignCenterCenter">
+            <div class="NavBoxes NavBox1 alignCenterCenter">
+                <img src="Images/Logo.png" alt="Logo" id="logoimg">
+            </div>
+            <div class="NavBoxes NavBox2 alignCenterCenter fontfamily">
+                <a href="#about">ABOUT ME</a>
+                <a href="#education">EDUCATION</a>
+                <a href="#skills">SKILLS</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT ME</a>
+            </div>
+            <div class="hoverMenuImg">
+                <img src="/Images/hoverMenu.png" alt="" id="menuimg">
+            </div>
+        </div>
+    </nav>
+    <header class="Header alignCenterCenter">
+        <div class="InHeader width80vw alignCenterCenter">
+            <div class="NamePhoto fontfamily">
+                <div class="nameBox alignCenterCenter">
+                    <h3>Hi, I am</h3>
+                    <h1>Gaurav Mane</h1>
+                    <p>Front-end Developer / C++ Programmer</p>
+                </div>
+                <div class="contactPlatfroms">
+                    <a href="https://www.linkedin.com/in/gaurav-mane-b9033b327/"
+                        class="contact1 alignCenterCenter contacts" target="_blank"
+                        aria-label="Read more about Seminole tax hike"><img src="Images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/Gauravmane31" class="contact2 alignCenterCenter contacts"
+                        target="_blank" aria-label="Read more about Seminole tax hike"><img src="Images/github.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/itz_gaurav_4566" class="contact3 alignCenterCenter contacts"
+                        target="_blank" aria-label="Read more about Seminole tax hike"><img src="Images/instagram.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="photo alignCenterCenter">
+                <img src="Images/my_pic.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- About Me -->
+    <section class="AboutMe" id="about">
+        <h2 class="section-heading">About Me</h2>
+        <p>Second-year student at Walchand College of Engineering, pursuing a degree in Computer Science and
+            Engineering. Passionate about web development and competitive programming, with experience building 5+
+            websites and solving 400+ programming problems. Outside of technology, I have a strong interest in drawing
+            and playing the guitar.</p>
+    </section>
+    <!-- Education -->
+    <section class="education-section" id="education">
+        <h2 class="section-heading">Education</h2>
+        <ul>
+            <li><strong>Bachelor of Technology in Computer Science</strong> – Walchand College of Engineering, Sangli
+                (2024–2028)</li>
+            <li><strong>Higher Secondary Education</strong> – Sharad Science and Commerce College, Yadrav (2022–2024)
+            </li>
+        </ul>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills-section" id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <div class="alignCenterCenter Using-Now-div">
+            <h3>Using Now</h3>
+            <div class="skills-section-div alignCenterCenter">
+                <img src="/Images/HTML.png" alt=""><img src="/Images/CSS.png" alt=""><img src="/Images/C.png"
+                    alt=""><img src="/Images/C++.png" alt="">
+            </div>
+        </div>
+        <div class="alignCenterCenter Using-Now-div">
+            <h3>Learning</h3>
+            <div class="skills-section-div alignCenterCenter">
+                <img src="/Images/JS.png" alt=""><img src="/Images/JAVA.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio-section alignCenterCenter" id="portfolio">
+        <h2 class="section-heading">Portfolio</h2>
+        <p style="text-align: center;">Here are some of my projects</p>
+        <div>
+            <a href="https://github.com/Gauravmane31/codesoft-task1" target="_blank" id="portfolio1"></a>
+            <a href="" id="portfolio2"></a>
+            <a href="" id="portfolio3"></a>
+            <a href="" id="portfolio4"></a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Include EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("LHHFlcWo770_eSTpb"); // Your EmailJS public key
+        })();
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_5ru48bk", "template_hx6qzmg", this)//template_hx6qzmg
+                .then(function () {
+                    alert("Message sent successfully!");
+                    document.getElementById("contact-form").reset(); // Clear the form
+                }, function (error) {
+                    alert("Failed to send message.\n" + JSON.stringify(error));
+                });
+        });
+    </script>
+
+
+</body>
+
+</html>
