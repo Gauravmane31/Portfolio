@@ -43,15 +43,22 @@ A passionate **Computer Science Engineering student** and **Frontend Developer**
 ## 📁 Project Structure
 
 portfolio/
-│
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-│ ├── images/
-│ └── icons/
-└── README.md
 
+│
+
+├── index.html
+
+├── style.css
+
+├── script.js
+
+├── assets/
+
+│ ├── images/
+
+│ └── icons/
+
+└── README.md
 
 ---
 
@@ -92,5 +99,7 @@ This portfolio represents:
 ## 📬 Contact Me
 
 📧 Email: your-email@example.com
+
 💼 LinkedIn: https://linkedin.com/in/your-profile
+
 🐙 GitHub: https://github.com/your-username
