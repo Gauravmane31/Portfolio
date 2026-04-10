@@ -98,8 +98,8 @@ This portfolio represents:
   
 ## 📬 Contact Me
 
-📧 Email: your-email@example.com
+ 📧 Email: your-email@example.com
 
-💼 LinkedIn: https://linkedin.com/in/your-profile
+ 💼 LinkedIn: https://linkedin.com/in/your-profile
 
-🐙 GitHub: https://github.com/your-username
+ 🐙 GitHub: https://github.com/your-username
