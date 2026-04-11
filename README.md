@@ -6,7 +6,7 @@ A modern and responsive personal portfolio website showcasing my projects, skill
 
 ## 🚀 Live Demo
 
-👉 [View Portfolio](https://your-portfolio-link.com)
+👉 [View Portfolio](https://gauravmane31.github.io/Portfolio/)
 
 ---
 
